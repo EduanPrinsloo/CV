@@ -1,0 +1,20 @@
+with open('DOB.txt', 'r+') as f:
+    print('\n''Name: ')
+    num2 = 0
+    for line in f:
+        num2 += 1
+        line = line.split()
+        line = line[:2]
+
+        print(str(num2) + '.' , ' '.join(line))
+
+
+with open('DOB.txt', 'r+') as f:
+    print('Date: ','\n')
+    num = 0
+    for line in f:
+        num += 1
+        line = line.split()
+        line = line[-3:]
+
+        print(str(num) + '.', ' '.join(line))
