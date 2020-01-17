@@ -1,0 +1,11 @@
+# Number_Pyramid (Nested for loops)
+
+num = int(9)
+
+for row in range (num):
+    val = row + 1
+    dec = row + 1
+    for col in range(row+1):
+        print(val, end=" ")
+        val = val + dec
+    print('')
