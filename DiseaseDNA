@@ -1,0 +1,40 @@
+# this program identifies and returns the amino acid sequence of the DNA using the
+amino acid SLC code
+
+dna = 'ATTATTATT'
+
+length = len(dna)
+countA = dna.count('A')
+countT = dna.count('T')
+ATcontent=(countA + countT)/length
+
+print('ATcontent IS' + str(ATcontent))
+
+#File
+
+with open('DNA.txt','r+') as f:
+    count = 1;
+    for i in f:
+        currentLine = i.split(' ')
+        name = currentLine [:2]
+        name.insert(0,count);
+        name.insert(0,'name');
+        birthday = currentLine[3:];
+        birthday = insert(0,'birth day');
+        birthday.insert(1,count);
+        count += 1
+        name = ','.join(repr(e) for e in name)
+        birthday = ','.join(repr(j) for j in birthday)
+        name=name.replace(',' , '')
+        birthday = bithday.replace(',' , '')
+        print(name)
+        print(birthday)
+        
+
+translate(c)
+DNAtranslate = ' '
+DNA_dict = {'ATA' : 'I' ,
+            'ATA' : 'I' ,
+            'ATA' : 'I' ,
+            'ATA' : 'I' ,
+            }
